@@ -306,7 +306,7 @@ const ContactSection = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3326.4416958070465!2d36.32168868479898!3d33.51589998075522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMwJzU3LjIiTiAzNsKwMTknMTAuMiJF!5e0!3m2!1sar!2snl!4v1762344140422!5m2!1sar!2snl"
                 
-                style={{ width: "100%", height: "330px" ,border:"0", borderRadius:"0px"}}
+                style={{ width: "100%", height: "330px" ,border:"0", borderRadius:"15px"}}
                 allowFullScreen=""
                 loading="lazy"
               ></iframe>
