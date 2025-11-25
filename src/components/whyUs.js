@@ -71,7 +71,7 @@ const Features = () => {
             <img
               src={IMAGES_ASSETS.gallery42}
               alt=""
-              className="w-full md:h-120"
+              className="w-full md:h-120 "
             />
           </div>
         </div>

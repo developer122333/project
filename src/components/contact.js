@@ -1,4 +1,3 @@
-
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -41,8 +40,13 @@ const ContactSection = () => {
   };
 
   const InfoItem = ({ icon, title, children }) => (
-        <div className={`info-item sm:w-full md:w-1/2 d-flex gap-2 ${isFocused ? '' : 'aos-init'}`} data-aos={!isFocused ? "fade-up" : undefined} data-aos-delay="200">
- 
+    <div
+      className={`info-item sm:w-full md:w-1/2 d-flex gap-2 ${
+        isFocused ? "" : "aos-init"
+      }`}
+      data-aos={!isFocused ? "fade-up" : undefined}
+      data-aos-delay="200"
+    >
       <i className={`bi ${icon} flex-shrink-0`}></i>
       <div>
         <h3>{title}</h3>
@@ -59,20 +63,32 @@ const ContactSection = () => {
           <p> ابن عساكر - جانب الهرم</p>
         </InfoItem>
         <InfoItem icon="bi-telephone" title="الهاتف">
-          <a className="hover:underline hover:accentColor default-color" href="tel:0115427167">
+          <a
+            className="hover:underline hover:accentColor default-color"
+            href="tel:0115427167"
+          >
             0115427167
           </a>
           <br />
-          <a className="hover:underline hover:accentColor default-color" href="tel:+963938525704">
+          <a
+            className="hover:underline hover:accentColor default-color"
+            href="tel:+963938525704"
+          >
             0938525704
           </a>
         </InfoItem>
         <InfoItem icon="bi-envelope" title="البريد الالكتروني">
-          <a className="hover:underline hover:accentColor default-color" href="mailto:mhmd@zhajjali.com">
+          <a
+            className="hover:underline hover:accentColor default-color"
+            href="mailto:mhmd@zhajjali.com"
+          >
             mhmd@zhajjali.com
           </a>
           <br />
-          <a className="hover:underline hover:accentColor default-color" href="mailto:zha.hajali@gmail.com">
+          <a
+            className="hover:underline hover:accentColor default-color"
+            href="mailto:zha.hajali@gmail.com"
+          >
             zha.hajali@gmail.com
           </a>
           <br />
@@ -101,7 +117,12 @@ const ContactSection = () => {
               <InfoList />
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3326.4416958070465!2d36.32168868479898!3d33.51589998075522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDMwJzU3LjIiTiAzNsKwMTknMTAuMiJF!5e0!3m2!1sar!2snl!4v1762344140422!5m2!1sar!2snl"
-                style={{ width: "100%", height: "330px", border: "0", borderRadius: "15px" }}
+                style={{
+                  width: "100%",
+                  height: "330px",
+                  border: "0",
+                  borderRadius: "0px",
+                }}
                 allowFullScreen=""
                 loading="lazy"
               ></iframe>
@@ -125,9 +146,8 @@ const ContactSection = () => {
                     name="name"
                     id="name-field"
                     className="form-control"
-                                    onFocus={handleFocus}
-                onBlur={handleBlur}
-
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="الاسم"
@@ -140,9 +160,8 @@ const ContactSection = () => {
                     type="email"
                     name="email"
                     id="email-field"
-                                                        onFocus={handleFocus}
-                onBlur={handleBlur}
-
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     className="form-control"
                     value={formData.email}
                     onChange={handleChange}
@@ -156,9 +175,8 @@ const ContactSection = () => {
                     type="text"
                     name="subject"
                     id="subject-field"
-                                                        onFocus={handleFocus}
-                onBlur={handleBlur}
-
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     className="form-control"
                     value={formData.subject}
                     onChange={handleChange}
@@ -175,16 +193,21 @@ const ContactSection = () => {
                     id="message-field"
                     value={formData.message}
                     onChange={handleChange}
-                                                        onFocus={handleFocus}
-                onBlur={handleBlur}
-
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
                     placeholder="الرسالة"
                     required
                   ></textarea>
                 </div>
 
                 <div className="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
+                  <button
+                    type="submit"
+                    onFocus={handleFocus}
+                    onBlur={handleBlur}
+                  >
+                    Send Message
+                  </button>
                 </div>
               </div>
             </form>
@@ -196,6 +219,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
-
-
