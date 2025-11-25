@@ -51,8 +51,8 @@ const Features = () => {
         </h2>
       </div>
       <div className="container">
-        <div className="row gy-4 flex flex-col lg:flex-row items-center">
-          <div className=" col-lg-7 flex flex-col justify-center">
+        <div className="row gy-4   items-center">
+          <div className=" col-lg-7   flex flex-col justify-center">
             {features.map((feature, index) => (
               <FeatureItem
                 key={index}
