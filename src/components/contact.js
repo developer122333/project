@@ -121,7 +121,7 @@ const ContactSection = () => {
                   width: "100%",
                   height: "330px",
                   border: "0",
-                  borderRadius: "0px",
+                  borderRadius: "15px",
                 }}
                 allowFullScreen=""
                 loading="lazy"
@@ -147,7 +147,7 @@ const ContactSection = () => {
                     id="name-field"
                     className="form-control"
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={handleFocus}
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="الاسم"
@@ -161,7 +161,7 @@ const ContactSection = () => {
                     name="email"
                     id="email-field"
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={handleFocus}
                     className="form-control"
                     value={formData.email}
                     onChange={handleChange}
@@ -176,7 +176,7 @@ const ContactSection = () => {
                     name="subject"
                     id="subject-field"
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={handleFocus}
                     className="form-control"
                     value={formData.subject}
                     onChange={handleChange}
@@ -194,7 +194,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     onFocus={handleFocus}
-                    onBlur={handleBlur}
+                    onBlur={handleFocus}
                     placeholder="الرسالة"
                     required
                   ></textarea>
