@@ -19,7 +19,7 @@ const ContactSection = () => {
       )
       .then(
         (result) => {
-          alert("Message sent successfully.");
+          alert("تم ارسال الرسالة بنجاح.");
         },
         (error) => {
           alert("Failed to send message: " + JSON.stringify(error));
