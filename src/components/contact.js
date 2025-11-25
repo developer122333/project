@@ -206,7 +206,7 @@ const ContactSection = () => {
                     onFocus={handleFocus}
                     onBlur={handleFocus}
                   >
-ارسال                  </button>
+ارسال                 </button>
                 </div>
               </div>
             </form>
