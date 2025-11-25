@@ -22,7 +22,7 @@ const ContactSection = () => {
           alert("تم ارسال الرسالة بنجاح.");
         },
         (error) => {
-          alert("Failed to send message: " + JSON.stringify(error));
+          alert("  حدث خطأ في الارسال: " + JSON.stringify(error));
         }
       );
   };
